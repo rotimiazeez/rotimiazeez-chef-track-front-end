@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import logo from '../logo.png';
 import './Nav.css';
 
 const Nav = ({ handleLogOut }) => {
@@ -20,7 +19,7 @@ const Nav = ({ handleLogOut }) => {
               : 'nav-icons-holder nav-mobile-border'
           }
         >
-          <img src={logo} alt="Logo" className="logo" />
+          {/* <img src={logo} alt="Logo" className="logo" /> */}
           <div className="nav-btn-holder">
             <button className="button-signout" type="submit" onClick={handleLogOut}>
               Log out
