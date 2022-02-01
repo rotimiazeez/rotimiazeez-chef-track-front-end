@@ -1,0 +1,182 @@
+/*
+  ==============================================
+               ****** RESET *****
+  ==============================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.link-style {
+  text-decoration: none;
+  color: #000;
+}
+
+/*
+  ==============================================
+               ****** GLOBAL *****
+  ==============================================
+*/
+
+/* -----------------  HEADER - START -------------------- */
+
+.logo {
+  display: block;
+  padding-left: 1rem;
+  width: 70px;
+  height: 70px;
+}
+
+.navigation-panel {
+  width: 100vw;
+
+  /* height: 100vh; */
+  padding: 0;
+  border: 1px solid #cacac8;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-icons-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile-border {
+  border-bottom: 1px solid #cacac8;
+}
+
+.nav-btn-holder {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-signout {
+  padding: 0.3rem;
+  border: 1px solid #97bf11;
+  border-radius: 4px;
+}
+
+.button-signout:hover {
+  background-color: #97bf11;
+  border: 1px solid #000;
+}
+
+.button-icon {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+  padding-left: 0;
+}
+
+.fa-times,
+.fa-bars {
+  display: block;
+}
+
+.hide-mobile-menu {
+  display: none;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-list {
+  padding: 0.5rem 0;
+}
+
+.nav-list:hover {
+  background-color: #97bf11;
+}
+
+.nav-link {
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* -----------------  HEADER - END -------------------- */
+
+/* -----------------  FOOTER - START -------------------- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  /* left: 22%; */
+
+  /* right: 22%; */
+  width: 100%;
+}
+
+.footer-ul {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: auto;
+}
+
+/* -----------------  FOOTER - END -------------------- */
+
+/*
+    ===============================================================
+      ****** NAVIGATION PANEL - MEDIA QUERY min-width 768px *****
+    ===============================================================
+*/
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    padding-left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .navigation-panel {
+    width: 200px;
+
+    /* padding: 1rem 0 1rem 1rem; */
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .fa-times,
+  .fa-bars {
+    display: none;
+  }
+
+  .hide-mobile-menu {
+    display: block;
+  }
+
+  .button-icon {
+    display: none;
+    margin-left: 0.5rem;
+  }
+
+  footer {
+    left: 0%;
+    right: 81%;
+    width: max-content;
+  }
+
+  .nav-icons-holder {
+    justify-content: space-around;
+  }
+
+  .nav-mobile-border {
+    border-bottom: none;
+  }
+}
