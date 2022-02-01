@@ -1,0 +1,172 @@
+.button-x {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.x-icon {
+  display: block;
+}
+
+.reg {
+  color: #fff;
+  background-color: #97bf11;
+  height: 100vh;
+}
+
+.containerr {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #97bf11;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+  padding: 20px 0;
+}
+
+.reg-form-title {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.baar {
+  width: 55%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.description {
+  line-height: 35px;
+  width: 75%;
+  text-align: center;
+  margin: 0 40px;
+  padding: 20px 0;
+}
+
+.select-book {
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgb(0 0 0 / 56%);
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.select-city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.reserve-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.reserve-date label {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.reserve-date input {
+  outline: none;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #97bf11;
+  padding: 0 10px;
+}
+
+.select-and-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.select-city select {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #97bf11;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0 3px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.book-btn button {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #97bf11;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.select-city select:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #34495e;
+}
+
+.book-btn button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #97bf11;
+}
+
+.hamburger {
+  font-size: 40px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 10px;
+  align-items: center;
+  background-color: #fff;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .containerr {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reg-form-title {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+
+  .description {
+    line-height: 30px;
+    width: 65%;
+    text-align: center;
+    margin: 0 30px;
+    font-size: 17px;
+  }
+}

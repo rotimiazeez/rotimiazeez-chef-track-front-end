@@ -1,0 +1,21 @@
+.select-city-and-book {
+  text-align: center;
+}
+
+.select-city-drop-down {
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.select-city-drop-down select {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #97bf11;
+  padding: 0.5rem;
+}
+
+.select-city-drop-down select:focus {
+  outline: none;
+}

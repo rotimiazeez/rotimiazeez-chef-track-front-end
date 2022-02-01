@@ -1,0 +1,94 @@
+/*
+  ==============================================
+               ****** GLOBAL *****
+  ==============================================
+*/
+* {
+  box-sizing: border-box;
+}
+
+.add-form {
+  padding-top: 10vh;
+  background-color: #97bf11;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+#close {
+  position: fixed;
+  right: 5%;
+}
+
+.add-item-form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.button-x-myreserv {
+  margin-top: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-item-input,
+.add-item-btn {
+  color: #fff;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 14px;
+}
+
+.add-item-btn:hover {
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+.add-item-input:focus {
+  outline: none;
+}
+
+.add-item-input::placeholder {
+  color: #fff;
+}
+
+/*
+    ===============================================================
+      ****** NAVIGATION PANEL - MEDIA QUERY min-width 768px *****
+    ===============================================================
+*/
+
+@media only screen and (min-width: 768px) {
+  .add-item-form {
+    width: 60%;
+  }
+
+  .button-x-myreserv {
+    width: 60%;
+  }
+
+  .add-item-input,
+  .add-item-btn {
+    padding: 0.7rem;
+    font-size: 18px;
+  }
+}
