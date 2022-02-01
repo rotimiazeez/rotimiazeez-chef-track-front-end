@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contents {
+  display: block;
+}
+
+.homepage {
+  width: 100vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-img {
+  height: 100px;
+  width: auto;
+}
+
+#previousButtonContainer,
+#nextButtonContainer {
+  display: inline-block;
+  width: 75px;
+}
+
+#mainDiv {
+  display: inline-flex;
+  width: calc(80vw - 150px);
+  text-align: center;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#mainDiv::-webkit-scrollbar {
+  display: none;
+}
+
+#previousButton {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: white;
+  background-color: rgb(72, 167, 28);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#nextButton {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  background-color: rgb(72, 167, 28);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage {
+    width: calc(100vw - 200px);
+    display: inline-flex;
+  }
+
+  .contents {
+    display: flex;
+  }
+}
+
+/* Font Sizes */
+
+.fsize-3 {
+  font-size: 3px;
+}
+
+.fsize-5 {
+  font-size: 5px;
+}
+
+.fsize-12 {
+  font-size: 12px;
+}
+
+.fsize-15 {
+  font-size: 15px;
+}
+
+.fsize-25 {
+  font-size: 25px;
+}

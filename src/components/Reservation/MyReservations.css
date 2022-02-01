@@ -1,0 +1,48 @@
+.containerrr {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #97bf11;
+  justify-content: center;
+}
+
+.button-x-myreserv {
+  color: white;
+  font-size: 22px;
+  padding: 0.5rem;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#my-reses-title {
+  font-size: 38px;
+}
+
+#closeReservation {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .containerrr {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #my-reses-title {
+    font-size: 18px;
+  }
+
+  #closeReservation {
+    height: 30px;
+    width: 30px;
+  }
+}

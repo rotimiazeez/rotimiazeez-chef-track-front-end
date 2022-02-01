@@ -1,0 +1,111 @@
+.image-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-details {
+  flex-direction: column;
+}
+
+.chef-image {
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.text-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#backButtonContainer {
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+#backButton {
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .chef-details {
+    flex-direction: row;
+  }
+
+  .image-holder {
+    width: 75%;
+  }
+
+  .chef-image {
+    width: 70%;
+    height: auto;
+  }
+
+  .text-details {
+    width: 25%;
+  }
+
+  #backButtonContainer {
+    display: inline-block;
+    width: 75px;
+    align-self: flex-start;
+  }
+
+  #backButton {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    color: white;
+    background-color: rgb(72, 167, 28);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* Font Sizes */
+
+.fsize-3 {
+  font-size: 3px;
+}
+
+.fsize-5 {
+  font-size: 5px;
+}
+
+.fsize-12 {
+  font-size: 12px;
+}
+
+.fsize-15 {
+  font-size: 15px;
+}
+
+.fsize-20 {
+  font-size: 20px;
+}
+
+.fsize-25 {
+  font-size: 25px;
+}
+
+/* backgrounds */
+.bg-green {
+  background-color: rgb(72, 167, 28);
+  border-color: rgb(72, 167, 28);
+  box-shadow: none;
+}
+
+.bg-green:hover {
+  background-color: rgb(47, 109, 18);
+  border-color: rgb(47, 109, 18);
+  box-shadow: none;
+}
